@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Arrival | Arundel Capstone</title>
-    <script src="index.js"></script>
+    <title>Unity WebGL Player | Arrival</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width="1920" height="1080"></canvas>
-    <script src="Build/CapstoneBuild.loader.js"></script>
+    <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <script src="Build/Arrival-Build.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/CapstoneBuild.data",
-        frameworkUrl: "Build/CapstoneBuild.framework.js",
-        codeUrl: "Build/CapstoneBuild.wasm",
+        dataUrl: "Build/Arrival-Build.data",
+        frameworkUrl: "Build/Arrival-Build.framework.js",
+        codeUrl: "Build/Arrival-Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Arundel Capstone",
         productName: "Arrival",
-        productVersion: "0.1",
+        productVersion: "",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
