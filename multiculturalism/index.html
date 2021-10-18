@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Arrival | Multiculturalism | Arundel Capstone</title>
+    <script src="index.js"></script>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width="1920" height="1080"></canvas>
+    <script src="Build/Multiculturalism Build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Multiculturalism Build.data",
+        frameworkUrl: "Build/Multiculturalism Build.framework.js",
+        codeUrl: "Build/Multiculturalism Build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Arundel Capstone",
+        productName: "Multiculturalism",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
